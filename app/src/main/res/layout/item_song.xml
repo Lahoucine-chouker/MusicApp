@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/bg_item_song"
+    android:elevation="4dp"
+    android:padding="12dp">
+
+    <!-- Artwork with Rounded Corners -->
+    <ImageView
+        android:id="@+id/songArtwork"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="12dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Song Artwork"
+        android:background="@drawable/rounded_corners" />
+
+    <!-- Song Title -->
+    <TextView
+        android:id="@+id/songTitle"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="56dp"
+        android:layout_toEndOf="@id/songArtwork"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="#A81E1E"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Song Artist -->
+    <TextView
+        android:id="@+id/songArtist"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/songTitle"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="56dp"
+        android:layout_toEndOf="@id/songArtwork"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="#593C3C"
+        android:textSize="14sp" />
+
+    <!-- Play Button Icon -->
+    <ImageButton
+        android:id="@+id/playButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/play"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Play Song" />
+</RelativeLayout>

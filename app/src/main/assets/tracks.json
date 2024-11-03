@@ -1,0 +1,16 @@
+{
+  "results": [
+    {
+      "name": "Blinding Lights",
+      "artist": { "name": "The Weeknd" },
+      "audio": "https://www.example.com/audio/blinding_lights.mp3",
+      "image": "https://www.example.com/images/blinding_lights.jpg"
+    },
+    {
+      "name": "Shape of You",
+      "artist": { "name": "Ed Sheeran" },
+      "audio": "https://www.example.com/audio/shape_of_you.mp3",
+      "image": "https://www.example.com/images/shape_of_you.jpg"
+    }
+  ]
+}
